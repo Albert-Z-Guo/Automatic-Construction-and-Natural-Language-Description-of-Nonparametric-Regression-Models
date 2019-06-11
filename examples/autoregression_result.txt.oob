@@ -1,0 +1,46 @@
+Experiment oob results for
+ datafile = ../data/1d_data/autoregression.mat
+
+ Running experiment:
+description = An example experiment,
+data_dir = ../data/1d_data/autoregression.mat,
+max_depth = 2,
+random_order = False,
+k = 1,
+debug = False,
+local_computation = True,
+n_rand = 2,
+sd = 2,
+jitter_sd = 0.1,
+max_jobs = 500,
+verbose = True,
+make_predictions = False,
+skip_complete = False,
+results_dir = ../examples/,
+iters = 10,
+base_kernels = SE,Per,Lin,
+additive_form = False,
+mean = ff.MeanZero(),
+kernel = ff.NoiseKernel(),
+lik = ff.LikGauss(sf=-np.Inf),
+verbose_results = False,
+random_seed = 0,
+period_heuristic = 10,
+max_period_heuristic = 5,
+subset = False,
+subset_size = 250,
+full_iters = 0,
+bundle_size = 1,
+search_operators = None,
+score = BIC,
+period_heuristic_type = both,
+stopping_criteria = [],
+improvement_tolerance = 0.1,
+ 
+
+
+%%%%% Level 0 %%%%%
+
+
+%%%%% Level 1 %%%%%
+

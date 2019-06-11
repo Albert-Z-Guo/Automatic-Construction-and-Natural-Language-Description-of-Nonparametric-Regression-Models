@@ -1,0 +1,60 @@
+Experiment nan results for
+ datafile = ../data/1d_data/01-airline.mat
+
+ Running experiment:
+description = An example experiment,
+data_dir = ../data/1d_data/01-airline.mat,
+max_depth = 2,
+random_order = False,
+k = 1,
+debug = False,
+local_computation = True,
+n_rand = 2,
+sd = 2,
+jitter_sd = 0.1,
+max_jobs = 500,
+verbose = True,
+make_predictions = False,
+skip_complete = False,
+results_dir = ../examples/,
+iters = 10,
+base_kernels = SE,Per,Lin,
+additive_form = False,
+mean = ff.MeanZero(),
+kernel = ff.NoiseKernel(),
+lik = ff.LikGauss(sf=-np.Inf),
+verbose_results = False,
+random_seed = 0,
+period_heuristic = 10,
+max_period_heuristic = 5,
+subset = False,
+subset_size = 250,
+full_iters = 0,
+bundle_size = 1,
+search_operators = None,
+score = BIC,
+period_heuristic_type = both,
+stopping_criteria = [],
+improvement_tolerance = 0.1,
+ 
+
+
+%%%%% Level 0 %%%%%
+
+GPModel(mean=MeanZero(), kernel=LinearKernel(dimension=0, location=1944.866136347366, sf=-1.9971110408307164), likelihood=LikGauss(sf=-inf), nll=nan, ndata=144)
+GPModel(mean=MeanZero(), kernel=LinearKernel(dimension=0, location=1938.0487683698698, sf=5.334433131052639), likelihood=LikGauss(sf=-inf), nll=nan, ndata=144)
+GPModel(mean=MeanZero(), kernel=SqExpKernel(dimension=0, lengthscale=2.2299313795789524, sf=1.2106700597968776), likelihood=LikGauss(sf=-inf), nll=nan, ndata=144)
+GPModel(mean=MeanZero(), kernel=SqExpKernel(dimension=0, lengthscale=8.145868474791754, sf=2.23974363628189), likelihood=LikGauss(sf=-inf), nll=nan, ndata=144)
+
+%%%%% Level 1 %%%%%
+
+GPModel(mean=MeanZero(), kernel=ChangeWindowKernel(dimension=0, location=1958.8434579415755, steepness=1.4111049868351886, width=-0.058053791069464095, operands=[ ConstKernel(sf=7.365273325300314), ProductKernel(operands=[NoiseKernel(sf=0.44309197976616743), SumKernel(operands=[ConstKernel(sf=4.495290682755734), LinearKernel(dimension=0, location=1950.3506230922092, sf=3.096707943842668)])]) ]), likelihood=LikGauss(sf=-inf), nll=nan, ndata=144)
+GPModel(mean=MeanZero(), kernel=SumKernel(operands=[ConstKernel(sf=4.444787218803046), LinearKernel(dimension=0, location=1950.2931715867403, sf=3.2847260683350785)]), likelihood=LikGauss(sf=-inf), nll=nan, ndata=144)
+GPModel(mean=MeanZero(), kernel=ProductKernel(operands=[LinearKernel(dimension=0, location=1949.5014419936074, sf=1.8606126902606661), SumKernel(operands=[ConstKernel(sf=4.576547220892738), LinearKernel(dimension=0, location=1950.4526416310252, sf=3.195655496927853)])]), likelihood=LikGauss(sf=-inf), nll=nan, ndata=144)
+GPModel(mean=MeanZero(), kernel=ProductKernel(operands=[LinearKernel(dimension=0, location=1955.8258405911492, sf=2.7165989308934804), SumKernel(operands=[ConstKernel(sf=4.475667809334129), LinearKernel(dimension=0, location=1950.2481283337122, sf=3.2004815181035653)])]), likelihood=LikGauss(sf=-inf), nll=nan, ndata=144)
+GPModel(mean=MeanZero(), kernel=LinearKernel(dimension=0, location=1971.8495194802726, sf=2.2015284268597504), likelihood=LikGauss(sf=-inf), nll=nan, ndata=144)
+GPModel(mean=MeanZero(), kernel=ProductKernel(operands=[SqExpKernel(dimension=0, lengthscale=4.628321530491177, sf=1.312358228345159), SumKernel(operands=[ConstKernel(sf=4.459426127317905), LinearKernel(dimension=0, location=1950.270468714337, sf=3.3030332783092646)])]), likelihood=LikGauss(sf=-inf), nll=nan, ndata=144)
+GPModel(mean=MeanZero(), kernel=SqExpKernel(dimension=0, lengthscale=3.1303222747793407, sf=4.777415749276871), likelihood=LikGauss(sf=-inf), nll=nan, ndata=144)
+GPModel(mean=MeanZero(), kernel=SqExpKernel(dimension=0, lengthscale=1.8536464807194433, sf=-0.8774701615760047), likelihood=LikGauss(sf=-inf), nll=nan, ndata=144)
+GPModel(mean=MeanZero(), kernel=LinearKernel(dimension=0, location=1967.5719938670293, sf=7.269386562055251), likelihood=LikGauss(sf=-inf), nll=nan, ndata=144)
+GPModel(mean=MeanZero(), kernel=ChangeWindowKernel(dimension=0, location=1951.013331637679, steepness=0.6438353568661932, width=-0.4863509024560221, operands=[ ConstKernel(sf=9.478644288017971), ProductKernel(operands=[NoiseKernel(sf=0.5770264201587133), SumKernel(operands=[ConstKernel(sf=4.393376648663895), LinearKernel(dimension=0, location=1950.2667741962389, sf=3.359265976790117)])]) ]), likelihood=LikGauss(sf=-inf), nll=nan, ndata=144)

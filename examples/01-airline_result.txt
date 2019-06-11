@@ -1,0 +1,48 @@
+Experiment all_results for
+ datafile = ../data/1d_data/01-airline.mat
+
+ Running experiment:
+description = An example experiment,
+data_dir = ../data/1d_data/01-airline.mat,
+max_depth = 2,
+random_order = False,
+k = 1,
+debug = False,
+local_computation = True,
+n_rand = 2,
+sd = 2,
+jitter_sd = 0.1,
+max_jobs = 500,
+verbose = True,
+make_predictions = False,
+skip_complete = False,
+results_dir = ../examples/,
+iters = 10,
+base_kernels = SE,Per,Lin,
+additive_form = False,
+mean = ff.MeanZero(),
+kernel = ff.NoiseKernel(),
+lik = ff.LikGauss(sf=-np.Inf),
+verbose_results = False,
+random_seed = 0,
+period_heuristic = 10,
+max_period_heuristic = 5,
+subset = False,
+subset_size = 250,
+full_iters = 0,
+bundle_size = 1,
+search_operators = None,
+score = BIC,
+period_heuristic_type = both,
+stopping_criteria = [],
+improvement_tolerance = 0.1,
+ 
+
+
+%%%%% Level 0 %%%%%
+
+GPModel(mean=MeanZero(), kernel=ProductKernel(operands=[NoiseKernel(sf=0.5289839705469346), SumKernel(operands=[ConstKernel(sf=4.490195255054606), LinearKernel(dimension=0, location=1950.2179769279726, sf=3.27613087099164)])]), likelihood=LikGauss(sf=-inf), nll=1005.6443210139464, ndata=144)
+
+%%%%% Level 1 %%%%%
+
+GPModel(mean=MeanZero(), kernel=ProductKernel(operands=[SumKernel(operands=[ConstKernel(sf=3.852579311479958), LinearKernel(dimension=0, location=1950.3338027322468, sf=2.5150268682540036)]), SumKernel(operands=[NoiseKernel(sf=-0.6846464049230753), LinearKernel(dimension=0, location=1946.1907174224855, sf=3.0575251090518667)])]), likelihood=LikGauss(sf=-inf), nll=743.0951650040103, ndata=144)

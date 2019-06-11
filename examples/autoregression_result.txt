@@ -1,0 +1,48 @@
+Experiment all_results for
+ datafile = ../data/1d_data/autoregression.mat
+
+ Running experiment:
+description = An example experiment,
+data_dir = ../data/1d_data/autoregression.mat,
+max_depth = 2,
+random_order = False,
+k = 1,
+debug = False,
+local_computation = True,
+n_rand = 2,
+sd = 2,
+jitter_sd = 0.1,
+max_jobs = 500,
+verbose = True,
+make_predictions = False,
+skip_complete = False,
+results_dir = ../examples/,
+iters = 10,
+base_kernels = SE,Per,Lin,
+additive_form = False,
+mean = ff.MeanZero(),
+kernel = ff.NoiseKernel(),
+lik = ff.LikGauss(sf=-np.Inf),
+verbose_results = False,
+random_seed = 0,
+period_heuristic = 10,
+max_period_heuristic = 5,
+subset = False,
+subset_size = 250,
+full_iters = 0,
+bundle_size = 1,
+search_operators = None,
+score = BIC,
+period_heuristic_type = both,
+stopping_criteria = [],
+improvement_tolerance = 0.1,
+ 
+
+
+%%%%% Level 0 %%%%%
+
+GPModel(mean=MeanZero(), kernel=ChangePointKernel(dimension=0, location=13.199100102758742, steepness=-0.1563397880635624, operands=[ NoiseKernel(sf=1.0407976675298602), NoiseKernel(sf=26.243383588659327) ]), likelihood=LikGauss(sf=-inf), nll=382.8789420469849, ndata=20)
+
+%%%%% Level 1 %%%%%
+
+GPModel(mean=MeanZero(), kernel=ChangePointKernel(dimension=0, location=14.671917019806596, steepness=0.029594021900014644, operands=[ NoiseKernel(sf=0.9433422083104575), SumKernel(operands=[NoiseKernel(sf=25.242197985314718), SqExpKernel(dimension=0, lengthscale=2.989274873896021, sf=1.1230346399635558)]) ]), likelihood=LikGauss(sf=-inf), nll=316.71190770558, ndata=20)
