@@ -5,7 +5,7 @@ To install all libraries/dependencies, run:
 pip3 install -r requirement.txt
 ```
 
-Make sure `config.py` in `./source/cblparallel` has the local paths for [MATLAB](https://www.mathworks.com/products/matlab.html) and GPML. In addition, make sure MATLAB's [Statistics and Machine Learning Toolbox](https://www.mathworks.com/products/statistics.html) and [Signal Processing Toolbox](https://www.mathworks.com/products/signal.html) are installed as well.
+Make sure `config.py` in `./source/cblparallel` has the local paths for [MATLAB](https://www.mathworks.com/products/matlab.html) and [GPML](http://www.gaussianprocess.org/gpml/code/matlab/doc/). In addition, make sure MATLAB's [Statistics and Machine Learning Toolbox](https://www.mathworks.com/products/statistics.html) and [Signal Processing Toolbox](https://www.mathworks.com/products/signal.html) are installed as well.
 
 To start the program, run:
 ```bash
